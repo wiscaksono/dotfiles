@@ -49,7 +49,7 @@ font-3 = "Iosevka Nerd Font:size=18;4"
 # Default
 modules-left = spacing cpu memory filesystem spacing spacing network 
 modules-center = i3 
-modules-right = battery spacing spacing volume brightness spacing time 
+modules-right = time spacing battery spacing spacing volume brightness
 
 spacing = 0
 dim-value = 1.0
@@ -83,3 +83,4 @@ compositing-border = over
 pseudo-transparency = false
 
 ;; _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
+

@@ -36,7 +36,7 @@ card = ${system.graphics_card}
 
 enable-scroll = true
 
-format = <ramp> <label>
+format = <ramp>  <label>
 format-background = ${color.background}
 format-padding = 1
 
@@ -65,16 +65,16 @@ use-ui-max = false
 
 interval = 5
 
-format-volume = <ramp-volume><label-volume>
+format-volume = <ramp-volume> <label-volume>
 
-format-muted = <label-muted>
+format-muted =  <label-muted>
 format-muted-prefix = " "
 format-muted-prefix-font = 2
 format-muted-prefix-foreground = ${color.white}
 format-muted-prefix-background = ${color.background}
 
 label-volume = "%percentage%% "
-label-muted = "Mute"
+label-muted = " Mute "
 
 label-volume-background = ${color.background}
 label-muted-background = ${color.background}
@@ -112,13 +112,13 @@ adapter = ${system.adapter}
 poll-interval = 2
 time-format = %H:%M
 
-format-charging = <animation-charging><label-charging>
+format-charging = <animation-charging>  <label-charging>
 format-charging-prefix = 
 
-format-discharging = <ramp-capacity><label-discharging>
+format-discharging = <ramp-capacity>  <label-discharging>
 
 format-full = <label-full>
-format-full-prefix = " "
+format-full-prefix = "   "
 format-full-prefix-font = 2
 format-full-prefix-foreground = ${color.white}
 format-full-prefix-background = ${color.background}
@@ -221,7 +221,7 @@ format-padding = 0
 format-prefix-foreground = ${color.white}
 format-foreground = ${color.white}
 format-background = ${color.background}
-label = "%{A1:xfce4-terminal -e gtop &:}%percentage%% %{A}"
+label = "%{A1:xfce4-terminal -e gtop &:} %percentage%% %{A}"
 
 ;; _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
 
@@ -232,7 +232,7 @@ format-margin = 0
 time = "%I:%M %p"
 time-alt = "%A, %m/%d/%y"
 
-format-prefix = 
+;;format-prefix = 
 format-prefix-foreground = ${color.white}
 format-prefix-background = ${color.background}
 
@@ -260,7 +260,7 @@ format-unmounted-prefix = " "
 format-unmounted-prefix-foreground = ${color.white}
 format-unmounted-prefix-background = ${color.background}
 
-label-mounted = "%{A1:xfce4-terminal -e ncdu &:} %free%%{A}"
+label-mounted = "%{A1:xfce4-terminal -e ncdu &:}  %free%%{A}"
 label-unmounted = " %mountpoint%: NA"
 label-mounted-foreground = ${color.white}
 
@@ -280,7 +280,7 @@ format-prefix-foreground = ${color.white}
 format-foreground = ${color.white}
 format-background = ${color.background}
 
-label = "%{A1:xfce4-terminal -e htop &:} %mb_used% %{A}"
+label = "%{A1:xfce4-terminal -e htop &:}  %mb_used% %{A}"
 
 ;; _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
 
@@ -311,10 +311,10 @@ interval = 1.0
 accumulate-stats = true
 unknown-as-up = true
 
-format-connected = <ramp-signal><label-connected>
+format-connected = <label-connected>
 
 format-disconnected = <label-disconnected>
-format-disconnected-prefix = "睊 "
+format-disconnected-prefix = "睊  "
 format-disconnected-prefix-font = 2
 format-disconnected-foreground = ${color.white}
 format-disconnected-background = ${color.background}
@@ -336,3 +336,8 @@ ramp-signal-4 = " "
 ramp-signal-foreground = ${color.white}
 ramp-signal-background = ${color.background}
 ramp-signal-font = 2
+
+[module/cpu-temp]
+type = custom/script
+exec = ~/.config/custom-scripts/cpu-temp.sh
+interval = 1

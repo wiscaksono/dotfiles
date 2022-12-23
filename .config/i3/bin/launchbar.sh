@@ -39,7 +39,7 @@ launch_bar() {
 			touch "$MFILE"
 		fi
 	fi
-		
+
 	if [[ ! $(pidof polybar) ]]; then
 		polybar -q main -c "$DIR"/config &
 	else
@@ -55,3 +55,4 @@ if [[ ! -f "$RFILE" ]]; then
 fi
 
 launch_bar
+

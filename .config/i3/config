@@ -166,7 +166,7 @@ bindsym $mod+r mode "resize"
 ##~~~ Rules For Workspaces ~~~~~~~~~~~~~~~~~~~~
 ##
 
-assign [class="Alacritty"] 1
+assign [class="Alacritty|figma-linux"] 1
 assign [class="google-chrome-stable"] 2
 assign [class="whatsapp-nativefier|discord"] 3
 assign [class="Geany|Code"] 4
@@ -188,3 +188,4 @@ for_window [class="feh|Viewnior|MPlayer"] floating enable
 
 exec_always --no-startup-id "~/.config/i3/bin/autostart.sh"
 exec_always --no-startup-id python "/home/wiscaksono/App/i3-autosplit/i3-autosplit.py"
+

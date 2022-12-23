@@ -36,7 +36,7 @@ window.opacity: 0.7
 ## Cursor
 cursor:
   style:
-    shape: Block
+    shape: line
     blinking: On
 
   unfocused_hollow: false
@@ -88,3 +88,4 @@ cursor:
 
 ## Live config reload
 live_config_reload: true
+
