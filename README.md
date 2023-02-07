@@ -1,1 +1,1 @@
-![Desktop](.images/desktop.png)
+![Desktop](./desktop.png)
